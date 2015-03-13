@@ -1,0 +1,24 @@
+<%- include header %>
+<form method="post">
+    Current Balance：<br/>
+    <input type="text" name="title" value="<%= user.balance %>" disabled="disabled"/><br/>
+
+    Firstname：<input type="text" name="firstname" value="<%= user.firstname %>"/><br/><br>
+
+    Lastname：<input type="text" name="lastname" value="<%= user.lastname %>"/><br/><br>
+
+    Age：<input type="text" name="age" value="<%= user.age %>"/><br/><br>
+
+    Eye color：<input type="text" name="eye" value="<%= user.eye %>"/><br/><br>
+
+    Company：<input type="text" name="company" value="<%= user.company %>"/><br/><br>
+
+    Email：<input type="email" name="email" value="<%= user.email %>"/><br/><br>
+
+    Phone：<input type="text" name="phone" value="<%= user.phone %>"/><br/><br>
+
+    Address：<input type="text" name="address" value="<%= user.address %>"/><br/><br>
+
+    <input type="submit" value="Save"/>
+</form>
+<%- include footer %>

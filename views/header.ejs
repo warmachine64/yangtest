@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <title>yang-test</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body>
+<header>
+    <h1><%= title %></h1>
+</header>
+<nav>
+    <% if (user) { %>
+    <span><a title="Log out" href="/logout">Log Out</a></span>
+    <% } else { %>
+    <span><a title="Log In" href="/login">Log In</a></span>
+    <span><a title="Sign Up" href="/reg">Sign Up</a></span>
+    <% } %>
+</nav>
+<article>
+
+    <% if (success) { %>
+    <div><%= success %></div>
+    <% } %>
+    <% if (error) { %>
+    <div><%= error %> </div>
+    <% } %>

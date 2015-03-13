@@ -1,0 +1,27 @@
+<%- include header %>
+<% if (user) { %>
+<form method="post">
+    Current Balance：<br />
+    <input type="text" name="title" value="<%= user.balance %>" disabled="disabled" /><br /><br>
+
+    Firstname： <input type="text" name="firstname" value="<%= user.firstname %>" disabled="disabled"/><br/><br>
+
+    Lastname： <input type="text" name="lastname" value="<%= user.lastname %>" disabled="disabled"/><br/><br>
+
+    Age： <input type="text" name="age" value="<%= user.age %>" disabled="disabled"/><br/><br>
+
+    Eye color： <input type="text" name="eye" value="<%= user.eye %>" disabled="disabled"/><br/><br>
+
+    Company： <input type="text" name="company" value="<%= user.company %>" disabled="disabled"/><br/><br>
+
+    Email： <input type="email" name="email" value="<%= user.email %>" disabled="disabled"/><br/><br>
+
+    Phone： <input type="text" name="phone" value="<%= user.phone %>" disabled="disabled"/><br/><br>
+
+    Address： <input type="text" name="address" value="<%= user.address %>" disabled="disabled"/><br/><br>
+
+    <span><a title="Edit" href="/edit">Edit</a></span>
+</form>
+<% } else { %>
+<% } %>
+<%- include footer %>
